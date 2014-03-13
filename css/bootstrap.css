@@ -494,7 +494,12 @@ cite {
 }
 .text-center {
   text-align: center;
-}
+ }
+ 
+ .text-white {
+  text-align: center; color:rgba(255,255,255,1);
+ }
+ 
 .text-justify {
   text-align: justify;
 }
@@ -4385,7 +4390,7 @@ a.list-group-item.active > .badge,
   padding: 30px; margin-top:20px;  margin-left:-15px; margin-right:-15px;
   margin-bottom: 30px;
   color: #EEE;
-  background-image:url(../images/bg_header2.jpg);
+  background-color:rgba(51,51,51,.4);
 }
 
 .jumbotron h1,

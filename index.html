@@ -4,11 +4,15 @@
 <head>
 <title>Jime Leung</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-<!-- bootsrap
-what rel, stylesheet means?
- -->
 
+<!-- bootsrap-->
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<!-- style2-->
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+<!-- 28468-->
+<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+<!-- one page scrolling-->
+<script type="text/javascript" src= src="js/one_page_scrolling.js"></script>
 </head>
 
 <body  style= "background-color:rgba(0,0,0,1); background-image:url('images/bg.jpg');
@@ -18,10 +22,55 @@ background-position:center;" >
 
 
 
+<header>
+
+    <!--Css Animation start -->
+    <div id="da-slider" class="da-slider col-lg-6 col-md-6 col-sm-6" >
+        <div class="da-slide">
+            <h2>Hi, I'm Jime.</h2> 
+            <p> UX/UI Designer live in Hong Kong </p>
+            <a href="#profile" class="btn da-link">What i do</a>
+            <div class="da-img">
+            <img class="profile-slider img-circle img-responsive " src="images/profile.jpg">
+            </div>
+        </div>
+        
+        <div class="da-slide">
+            <h2><span>250</span>project </h2>
+            
+            <p>With cross platform experience - Mobile, Tablet, Web</p>
+            <a href="#mywork" class="btn da-link">My work</a>
+            <div class="da-img  img-responsive">
+            <img class="img-slider" src="images/Responsive-showcase.png">
+            </div>
+        </div>
+        
+    </div>
+    <!--Css Animation end -->
+    
+    
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+
+
+</header>
+
+
 <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation"  style="background-image:url('images/bg.jpg')">
         <div class=" container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand_modify " href="#">Jime's Portfolio</a>
+           <!-- <a class="navbar-brand_modify " href="index.html">Jime Leung</a> -->
             
             <!-- toggle button-->
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -38,15 +87,15 @@ background-position:center;" >
 <!-- /.navbar-collapse-start →-->
 
     <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="nav">
               <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
-              <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>   Profile</a></li>
+              <li><a href="#profile"><span class="glyphicon glyphicon-user"></span>   Profile</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>  Works<b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>  Works<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="webdesign.html">Web design</a></li>
-                  <li><a href="printdesign.html">Print design</a></li>
-                  <li><a href="uxdesign.html">UX design</a></li>
+                  <li><a href="#webdesign">Web design</a></li>
+                  <li><a href="#printdesign">Print design</a></li>
+                  <li><a href="#uxdesign">UX design</a></li>
                 </ul>
               </li>
             </ul>
@@ -75,10 +124,13 @@ background-position:center;" >
 </nav>
 
 
+
+    
+
 <div class="container-fluid">
-<div class="headerbg">
-    <h1>User experience focus</h1>
-    <p>Graphic. Web. Digital Design</p>
+<div class="headerbg" id="profile">
+    <h1>UX/UI Design</h1>
+    <p>Mobile. Tablet. Web</p>
     <a class="btn btn-warning btn-lg">More Details</a>
     </div>
     </div>
@@ -87,10 +139,10 @@ background-position:center;" >
 <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <a href="#"><img class="img-responsive img-thumbnail" src="images/PORT-BG11.jpg"></a>
+              <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Click to see more...""><img class="img-responsive img-thumbnail" src="images/PORT-BG11.jpg"></a>
               <h3 class="text-white">My Profile</h3>
               <p style="color:white;">Web, UX, graphic designer...</p>
-              <a href="#" class="btn btn-success">See more...</a>
+              
             </div>
  
             <div class="col-md-4">
